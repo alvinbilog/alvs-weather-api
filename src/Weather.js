@@ -1,7 +1,7 @@
 import React from "react";
 // import Temperature from "./Temperature";
 import "./scss/weather.css";
-const Weather = ({ dailyWeather }) => {
+const Weather = ({ dailyWeather, index }) => {
   var fullDate = dailyWeather.Date;
   //Need to slice to separate the number
   const day = fullDate.slice(8, 10);
@@ -23,26 +23,34 @@ const Weather = ({ dailyWeather }) => {
   } else {
     stringNum = dailyWeather.Day.Icon; //no changes
   }
-
+  console.log(index);
   return (
     <div className="Weather">
-      <ul className="container">
-        <li>
-          <div className="img-container">
-            <h3>{days[dayOfTheWeek]}</h3>
+      <li
+        key={index}
+        className="container"
+        style={
+          index === 0
+            ? {
+                background: "#f3f3f3",
+              }
+            : {}
+        }
+      >
+        <div className="img-container">
+          <h3>{days[dayOfTheWeek]}</h3>
 
-            <img
-              src={`https://developer.accuweather.com/sites/default/files/${stringNum}-s.png`}
-              alt="weather"
-            />
-          </div>
+          <img
+            src={`https://developer.accuweather.com/sites/default/files/${stringNum}-s.png`}
+            alt="weather"
+          />
+        </div>
 
-          <div className="temperature">
-            <h3 id="min">{dailyWeather.Temperature.Minimum.Value}°</h3>
-            <h3>{dailyWeather.Temperature.Maximum.Value}°</h3>
-          </div>
-        </li>
-      </ul>
+        <div className="temperature">
+          <h3 id="min">{dailyWeather.Temperature.Minimum.Value}°</h3>
+          <h3>{dailyWeather.Temperature.Maximum.Value}°</h3>
+        </div>
+      </li>
     </div>
   );
 };

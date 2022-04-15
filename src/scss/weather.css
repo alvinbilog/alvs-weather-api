@@ -1,4 +1,4 @@
-.Weather .container {
+.Weather {
   height: 190px;
   width: 150px;
   list-style: none;
@@ -15,23 +15,27 @@
   margin: 0;
 }
 
-.Weather .container li .img-container {
+.Weather li {
+  margin: 0 auto;
+}
+
+.Weather li .img-container {
   text-align: center;
 }
 
-.Weather .container li .img-container h3 {
+.Weather li .img-container h3 {
   font-weight: semibold;
   color: grey;
   margin: 15px 0;
   font-size: 22px;
 }
 
-.Weather .container li .img-container img {
+.Weather li .img-container img {
   width: auto;
   height: 80px;
 }
 
-.Weather .container li .temperature {
+.Weather li .temperature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,13 +44,13 @@
           justify-content: center;
 }
 
-.Weather .container li .temperature h3 {
+.Weather li .temperature h3 {
   font-size: 22px;
   margin: 10px 10px;
   color: grey;
 }
 
-.Weather .container li .temperature #min {
+.Weather li .temperature #min {
   color: black;
 }
 /*# sourceMappingURL=weather.css.map */

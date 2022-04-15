@@ -5,14 +5,15 @@
           box-sizing: border-box;
 }
 
-.App .container__weather {
+.App ul {
   border: #f3f3f3 2px solid;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 760px;
+  width: 667px;
   height: 190px;
   margin-top: 15rem;
+  padding: 0;
 }
 /*# sourceMappingURL=App.css.map */

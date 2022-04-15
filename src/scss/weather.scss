@@ -1,41 +1,42 @@
 .Weather {
-  .container {
-    height: 190px;
-    width: 150px;
-    list-style: none;
-    // border: solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    li {
-      .img-container {
-        // border: solid blue;
-        text-align: center;
-        h3 {
-          font-weight: semibold;
-          color: grey;
-          margin: 15px 0;
-          font-size: 22px;
-        }
-        img {
-          width: auto;
-          height: 80px;
-        }
+  height: 190px;
+  width: 150px;
+  list-style: none;
+  // border: solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  li {
+    // border: solid blue;
+    // width: 140px;
+    margin: 0 auto;
+    .img-container {
+      // border: solid blue;
+      text-align: center;
+      h3 {
+        font-weight: semibold;
+        color: grey;
+        margin: 15px 0;
+        font-size: 22px;
       }
-      .temperature {
-        // border: solid green;
-        display: flex;
-        justify-content: center;
-        h3 {
-          font-size: 22px;
-          margin: 10px 10px;
-          color: grey;
-        }
-        #min {
-          color: black;
-        }
+      img {
+        width: auto;
+        height: 80px;
+      }
+    }
+    .temperature {
+      // border: solid green;
+      display: flex;
+      justify-content: center;
+      h3 {
+        font-size: 22px;
+        margin: 10px 10px;
+        color: grey;
+      }
+      #min {
+        color: black;
       }
     }
   }
