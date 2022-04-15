@@ -1,0 +1,13 @@
+.App {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  .container__weather {
+    border: #f3f3f3 2px solid;
+    margin: 0 auto;
+    display: flex;
+    width: 760px;
+    height: 190px;
+    margin-top: 15rem;
+  }
+}

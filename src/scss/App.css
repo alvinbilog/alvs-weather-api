@@ -1,0 +1,18 @@
+.App {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App .container__weather {
+  border: #f3f3f3 2px solid;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 760px;
+  height: 190px;
+  margin-top: 15rem;
+}
+/*# sourceMappingURL=App.css.map */

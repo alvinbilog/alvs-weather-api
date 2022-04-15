@@ -1,0 +1,52 @@
+.Weather .container {
+  height: 190px;
+  width: 150px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.Weather .container li .img-container {
+  text-align: center;
+}
+
+.Weather .container li .img-container h3 {
+  font-weight: semibold;
+  color: grey;
+  margin: 15px 0;
+  font-size: 22px;
+}
+
+.Weather .container li .img-container img {
+  width: auto;
+  height: 80px;
+}
+
+.Weather .container li .temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Weather .container li .temperature h3 {
+  font-size: 22px;
+  margin: 10px 10px;
+  color: grey;
+}
+
+.Weather .container li .temperature #min {
+  color: black;
+}
+/*# sourceMappingURL=weather.css.map */
